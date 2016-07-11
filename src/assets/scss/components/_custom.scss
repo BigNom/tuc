@@ -1,0 +1,61 @@
+
+.italics {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}
+
+.lead {
+  font-weight: 700;
+}
+
+.callout-contact {
+  background:rgba(0,0,0,0.05);
+  padding: 0 2rem;
+}
+
+
+.footer-main {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+background-color: $primary-color;
+p{
+  color: $white;
+  margin-bottom: .5rem;
+  font-weight: 500;
+}
+  a{
+    color: $white;
+    margin-left: -15px;
+}
+
+}
+
+.footer-bottom {
+background-color: $footer-bottom;
+p{
+  color: $white;
+  margin: .5rem;
+  font-weight: 400;
+  font-size: 1rem;
+}
+}
+
+.email-group {
+  display: inline;
+  .button {
+    background-color: $footer-bottom;
+  }
+}
+
+.img-about {
+  max-width: 50%;
+
+}
+
+.menu-text {
+  color: $white;
+  font-size: 16px;
+  font-family: 'Libre Baskerville', serif;
+
+}

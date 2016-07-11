@@ -1,0 +1,26 @@
+  <div class="show-for-medium" data-sticky-container>
+    <div class="title-bar" data-sticky data-options="marginTop:0;">
+      <div class="title-bar-left">
+        <span class="title-bar-title"><object id="logo-tuc" type="image/svg+xml" data="{{root}}assets/svg/logo-tuc.svg">The Ultimate Clean</object></span>
+      </div>
+      <div class="title-bar-right">
+        <ul class="dropdown menu align-right" data-dropdown-menu>
+          <li {{#ifpage 'index'}}class="current"{{/ifpage}}><a href="index.html">Home</a></li>
+          <li class="has-submenu">
+              <a href="#">Services</a>
+              <ul class="menu submenu vertical" data-submenu>
+                <li {{#ifpage 'carpet-cleaning'}}class="current"{{/ifpage}}><a href="carpet-cleaning.html">Carpet Cleaning</a></li>
+                <li {{#ifpage 'tile-cleaning'}}class="current"{{/ifpage}}><a href="tile-cleaning.html">Tile Cleaning</a></li>
+                  <li {{#ifpage 'upholstery-cleaning'}}class="current"{{/ifpage}}><a href="upholstery-cleaning.html">Upholstery Cleaning</a></li>
+              </ul>
+          </li>
+          <li {{#ifpage 'about'}}class="current"{{/ifpage}}><a href="about.html" class="{{#ifpage 'about'}}current{{/ifpage}}">About</a></li>
+          <li {{#ifpage 'gallery'}}class="current"{{/ifpage}}><a href="gallery.html">Gallery</a></li>
+          <li {{#ifpage 'testimonials'}}class="current"{{/ifpage}}><a href="testimonials.html">Testimonials</a></li>
+          <li {{#ifpage 'contact'}}class="current"{{/ifpage}}><a href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>

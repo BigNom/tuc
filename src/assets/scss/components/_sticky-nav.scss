@@ -1,0 +1,54 @@
+
+      .title-bar {
+      width: 100%;
+      z-index: 100;
+      transition: height .25s ease;
+      height: 4.5em;
+      #logo-tuc
+      {
+      padding-right: 100px;
+        padding-top: 0px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        display: inline-flex;
+      		height: 45px;
+      }
+
+.title-bar-right {
+  a {
+    font-size: 0.85rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    &:hover {
+      background: rgba(#000, 0.05);
+    }
+  }
+  .current a {
+      background: rgba(#000, 0.05);
+      font-weight: 600;
+      color: $white;
+    }
+    padding-top: 1.4em;
+}
+
+    }
+    .title-bar .title-bar-right, .title-bar .title-bar-left {
+      transition: padding-top .25s ease;
+        }
+    .title-bar.shrink {
+      height: 3em;
+    }
+    .title-bar.shrink .title-bar-right, .title-bar.shrink .title-bar-left {
+      padding-top: 0em;
+    }
+    .title-bar .dropdown.menu li {
+      float: left;
+    }
+    .title-bar .dropdown.menu .is-dropdown-submenu {
+      border: none;
+      background-color: #0e5d7c;
+    }
+    #root {
+      margin-top: 1em;
+    }

@@ -1,0 +1,42 @@
+.header-wrapper {
+/*  border:2px solid black;*/
+  margin:0;
+  padding-top: 50px;
+  height: 350px;
+  margin-bottom: 50px;
+  width: 100%;
+/*background: url("../img/carpet-texture.jpg");*/
+
+background: -moz-linear-gradient(top,  rgba(14,93,124,1) 0%, rgba(242,250,254,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(14,93,124,1) 0%,rgba(242,250,254,1) 100%);
+  background: linear-gradient(to bottom,  rgba(14,93,124,1) 0%,rgba(242,250,254,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e5d7c', endColorstr='#f2fafe',GradientType=0 );
+}
+
+
+
+#logo-world
+{
+  padding-top: 10px;
+	display: block;
+	width: 50%;
+	height: 75%;
+	margin: 0 auto;
+}
+
+
+
+/*.logo-sm {
+  margin-left: 10px;
+  transform: scale(1.25);
+}
+
+.logo-lg, .use {
+    z-index: 20;
+    font-size: 64px;
+    transform: scale(.75);
+    @include breakpoint(medium) {
+  transform: scale(1.5);
+  }
+
+}*/

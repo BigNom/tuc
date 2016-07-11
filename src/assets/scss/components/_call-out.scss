@@ -1,0 +1,72 @@
+.services-image:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.italics {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}
+
+.lead {
+  font-weight: 700;
+}
+
+.callout-contact {
+  background:rgba(0,0,0,0.05);
+  padding: 0 2rem;
+}
+
+
+.footer-main {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+background-color: $primary-color;
+p{
+  color: $white;
+  margin-bottom: .5rem;
+  font-weight: 500;
+}
+  a{
+    color: $white;
+    margin-left: -15px;
+}
+
+}
+
+.footer-bottom {
+background-color: $footer-bottom;
+p{
+  color: $white;
+  margin: .5rem;
+  font-weight: 400;
+  font-size: 1rem;
+}
+}
+
+.email-group {
+  display: inline;
+  .button {
+    background-color: $footer-bottom;
+  }
+}
+
+.img-about {
+  max-width: 50%;
+
+}
+
+.menu-text {
+  color: $white;
+  font-size: 16px;
+  font-family: 'Libre Baskerville', serif;
+
+}
+
+.menu .active > a {
+  color: #white;
+  font-weight: 500;
+  background-color: transparent;
+ border-bottom: white solid 3px;
+}

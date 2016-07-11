@@ -1,5 +1,5 @@
 # Your project's server will run on localhost:xxxx at this port
-PORT: 8000
+PORT: 8080
 
 # Autoprefixer will make sure your CSS works with these browsers
 COMPATIBILITY:
@@ -25,7 +25,7 @@ PATHS:
   # Paths to Sass libraries, which can then be loaded with @import
   sass:
     - "bower_components/foundation-sites/scss"
-    - "bower_components/motion-ui/src"*/
+    - "bower_components/motion-ui/src/*"
   # Paths to JavaScript libraries, which are compined into one file
   javascript:
     # Libraries requried by Foundation

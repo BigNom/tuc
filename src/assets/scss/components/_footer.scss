@@ -1,0 +1,39 @@
+.footer-main {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+background-color: $primary-color;
+p{
+  color: $white;
+  margin-bottom: .5rem;
+  font-weight: 500;
+}
+a{
+  color: $white;
+  margin-left: -15px;
+  padding-top: 0;
+
+  .social-icons {
+    font-size: 50px;
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
+}
+
+.social-icons:hover {
+  color: $secondary-color;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.footer-bottom {
+background-color: $footer-bottom;
+p{
+  color: $white;
+  margin: .5rem;
+  font-weight: 400;
+  font-size: 1rem;
+}
+}

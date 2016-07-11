@@ -1,0 +1,46 @@
+{{!-- alternative layout. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Clean | Contact</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link rel="stylesheet" href="{{root}}assets/css/foundation-icons.css">
+  </head>
+  <body>
+
+      <div class="off-canvas-wrapper"><div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+        {{> off-canvi}}
+
+        <div class="off-canvas-content" data-off-canvas-content>
+
+
+
+          {{> sticky-nav}}
+          {{> mobile-navigation}}
+
+            <div class="expanded row">
+              {{> header}}
+            </div>
+
+
+          <div class="row">
+
+            <div class="medium-12 large-12 columns">
+    {{> body}}
+            </div>
+
+          </div>
+
+          {{> footer}}
+        </div>
+      </div>
+  </div>
+
+    <script src="{{root}}assets/js/app.js"></script>
+  </body>
+</html>

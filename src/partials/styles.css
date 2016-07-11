@@ -1,0 +1,18 @@
+polyline
+{
+	stroke: 0;
+	stroke-linejoin: butt;
+	fill: #003565;
+}
+
+polyline.orange
+{
+	fill: #ff6400;
+}
+
+text#sp
+{
+	font-family: verdana, sans-serif;
+	font-size: 570%;
+	fill: #003565;
+}
