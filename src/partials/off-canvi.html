@@ -5,20 +5,42 @@
   <ul class="mobile-ofc vertical menu">
 
     <li>
-      <li class="active"><a href="index.html">Home</a></li>
-      <ul class="submenu menu vertical" data-submenu>
-        <li><p class="title-ofc">Services</p></li>
-        <li><a href="carpet-cleaning.html">Carpet Cleaning</a></li>
-        <li><a href="tile-cleaning.html">Tile Cleaning</a></li>
-        <li><a href="upholstery-cleaning.html">Upholstery Cleaning</a></li>
+      <li {{#ifpage 'index'}}class="current"{{/ifpage}}><a href="index.html">Home</a></li>
+      <li class="has-submenu">
+          <a href="#">Services</a>
+          <ul class="menu submenu vertical" data-submenu>
+            <li {{#ifpage 'carpet-cleaning'}}class="current"{{/ifpage}}><a href="carpet-cleaning.html">Carpet Cleaning</a></li>
+            <li {{#ifpage 'tile-cleaning'}}class="current"{{/ifpage}}><a href="tile-cleaning.html">Tile Cleaning</a></li>
+              <li {{#ifpage 'upholstery-cleaning'}}class="current"{{/ifpage}}><a href="upholstery-cleaning.html">Upholstery Cleaning</a></li>
+          </ul>
         <li class="divider"></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="contact.html" class="button">Contact Us</a></li>
-      </ul>
-    </li>
-  </ul>
+        <li {{#ifpage 'about'}}class="current"{{/ifpage}}><a href="about.html" class="{{#ifpage 'about'}}current{{/ifpage}}">About</a></li>
+        <li {{#ifpage 'gallery'}}class="current"{{/ifpage}}><a href="gallery.html">Gallery</a></li>
+        <li {{#ifpage 'testimonials'}}class="current"{{/ifpage}}><a href="testimonials.html">Testimonials</a></li>
+        <li {{#ifpage 'contact'}}class="current"{{/ifpage}}><a href="contact.html">Contact</a></li>
+
+
+
+        </li>
+        </ul>
+          <ul class="mobile-ofc-secondary vertical menu">
+        <a href="#">Follow Us</a>
+        <ul class="menu">
+          <li><a href="https://twitter.com/theultimateclea"><i class="fi-social-twitter social-icons"></i></a></li>
+          <li><a href="https://www.facebook.com/theultimateclean.com.au#"><i class="fi-social-facebook social-icons"></i></a></li>
+          <li><a href="https://plus.google.com/u/0/b/109137538950153923279/+TheUltimateCleanAlfredCove/posts"><i class=" fi-social-google-plus social-icons"></i></a></li>
+          <li><a href="https://au.linkedin.com/in/brett-prosser-80435b4b"><i class="fi-social-linkedin social-icons"></i></a></li>
+
+        </ul>
+        <li><a href="#">Call us today <strong>9330 4920</strong></a></li>
+
+              <a data-open="modalBook" class="expanded button">Book online</a>
+              </ul>
+
+
+
+
+
 </div>
 
 <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">

@@ -1,6 +1,36 @@
-.mobile-ofc {
+.mobile-ofc  {
   padding-top: 1rem;
-  padding-left: 0;
+  padding-left: 1rem;
+  padding-right: 0;
+  border-bottom: solid $white 5px;
+background-color: $primary-color;
+p{
+  padding-left: 1rem;
+  color: $white;
+  margin-bottom: .5rem;
+  font-weight: 500;
+background-color: darken($primary-color, 30);
+width: 100%;
+}
+a{
+  padding-left: 1rem;
+  color: $white;
+  padding-top: 0;
+  &:hover {
+    background: rgba(#000, 0.05);
+  }
+}
+.current a {
+    background: rgba(#000, 0.05);
+    font-weight: 600;
+    color: $white;
+  }
+
+}
+
+.mobile-ofc-secondary {
+  padding-top: 1rem;
+  padding-left: 1rem;
   padding-right: 0;
 background-color: $primary-color;
 p{
@@ -14,17 +44,30 @@ width: 100%;
 a{
   padding-left: 1rem;
   color: $white;
-
   padding-top: 0;
+  &:hover {
+    background: rgba(#000, 0.05);
+  }
 }
-
-  .social-icons {
-    font-size: 50px;
-    padding-top: 0;
-    margin-top: 0;
+.current a {
+    background: rgba(#000, 0.05);
+    font-weight: 600;
+    color: $white;
   }
 
+  .social-icons {
+    font-size: 30px;
+    padding-top: 0;
+    margin-top: 0;
+    .social-icons:hover {
+      color: $secondary-color;
+        opacity: 0.5;
+        filter: alpha(opacity=50); /* For IE8 and earlier */
+    }
+  }
 }
+
+
 
 
 

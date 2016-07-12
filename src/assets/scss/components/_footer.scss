@@ -1,4 +1,29 @@
+.footer {
+  width: 100%
+}
+
+.box-fb {
+  flex-grow: 1;
+}
+
+@include breakpoint(small) {
+
+  .footer-main {
+    flex-wrap: wrap;
+  }
+
+.footer-1 .footer-2 {
+  flex:1 1 50%;
+}
+
+.footer-social .footer-email {
+  flex: 1 1 25%;
+}
+}
+
 .footer-main {
+  display: flex;
+  list-style: none;
   padding-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -19,6 +44,8 @@ a{
     margin-top: 0;
   }
 }
+
+
 
 }
 
