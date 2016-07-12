@@ -4,15 +4,27 @@
       z-index: 100;
       transition: height .25s ease;
       height: 4.5em;
+    }
+    .title-bar-title {
+      padding-right: 0;
+      margin-right: 0;
       #logo-tuc
       {
-      padding-right: 100px;
+
         padding-top: 0px;
-        margin-left: 10px;
+        margin-left: 0px;
         margin-bottom: 10px;
         display: inline-flex;
-      		height: 45px;
+        width: 30%;
+        height: 30%;
+          @include breakpoint(850) {
+            width: 75%;
+            height: 75%;
+            margin-left: 10px;
+          }
       }
+    }
+
 
 .title-bar-right {
   a {
@@ -32,7 +44,7 @@
     padding-top: 1.4em;
 }
 
-    }
+
     .title-bar .title-bar-right, .title-bar .title-bar-left {
       transition: padding-top .25s ease;
         }
