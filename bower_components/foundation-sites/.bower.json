@@ -3,7 +3,7 @@
   "version": "6.2.3",
   "main": [
     "scss/foundation.scss",
-    "dist/foundation.js"
+    "public/foundation.js"
   ],
   "ignore": [
     "config",
