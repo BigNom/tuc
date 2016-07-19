@@ -1,17 +1,29 @@
 .header-wrapper {
 /*  border:2px solid black;*/
   margin:0;
-  padding-top: 50px;
-  height: 350px;
-  margin-bottom: 50px;
+  padding-top: 20px;
+  height: 100px;
+  margin-bottom: 20px;
   width: 100%;
+  @include breakpoint(medium) {
+    padding-top: 50px;
+      height: 200px;
+      margin-bottom: 50px;
+    }
+    @include breakpoint(large) {
+      padding-top: 50px;
+        height: 250px;
+        margin-bottom: 50px;
+      }
+
+}
 /*background: url("../img/carpet-texture.jpg");*/
 
 /*background: -moz-linear-gradient(top,  rgba(14,93,124,1) 0%, rgba(242,250,254,1) 100%);
   background: -webkit-linear-gradient(top,  rgba(14,93,124,1) 0%,rgba(242,250,254,1) 100%);
   background: linear-gradient(to bottom,  rgba(14,93,124,1) 0%,rgba(242,250,254,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e5d7c', endColorstr='#f2fafe',GradientType=0 );*/
-}
+
 
 
 
