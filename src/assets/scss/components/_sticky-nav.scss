@@ -30,13 +30,15 @@
 
 .title-bar-right {
   a {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    margin: 0 20px;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     color: $white;
 
     &:hover {
       background: rgba(#000, 0.05);
+      border-bottom: 1px solid $white;
     }
     a::after {
       color: $white;
@@ -46,6 +48,7 @@
       background: rgba(#000, 0.05);
       font-weight: 600;
       color: $white;
+      border-bottom: 2px solid $white;
     }
     padding-top: 1.4em;
 }
