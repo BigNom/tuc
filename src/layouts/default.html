@@ -1,18 +1,48 @@
 {{!-- This is the base layout for your project, and will be used on every page. --}}
 
 <!doctype html>
+<!-- Microdata markup added by Google Structured Data Markup Helper. -->
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Ultimate Clean{{#unlesspage 'index'}} | {{title}}{{/unlesspage}}</title>
+    <title>Perth WA Carpet Cleaners, Tile and Grout Cleaners and Upholstery Cleaners</title>
+<meta name="description" content="People use The Ultimate Clean to clean everything from the city's favorite hotels carpets to the most humble apartment." />
+<meta name="keywords" content="Carpet Cleaner in Perth, Carpet Cleaner Perth, Carpet Cleaners in Perth, Carpet Cleaners Perth, Carpet Cleaning in Perth, Carpet Cleaning Perth,
+Perth Carpet Cleaner, Perth Carpet Cleaners, Perth Carpet Cleaning" />
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
     <link rel="stylesheet" href="{{root}}assets/css/foundation-icons.css">
+    <meta name="google-site-verification" content="EnNKK1IStxTkAg26sbv21Ft1lMvAvbUG_21zwPlLl5Y" />
+    <meta property="og:url"           content="http://www.theultimateclean.com.au/" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Carpet Cleaning Perth, Tile Cleaning Perth, Upholstery Cleaning Perth, Water Restoration Perth" />
+    <meta property="og:description"   content="Perth cleaning company providing professional services to Carpet Cleaning, Tile Cleaning and Upholstery Cleaning." />
+    <meta property="og:image"         content="http://www.theultimateclean.com.au/assets/img/carpet-cleaning.jpg" />
   </head>
   <body>
 
-    <div class="off-canvas-wrapper"><div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+    <!-- Load Facebook SDK for JavaScript -->
+  	<div id="fb-root"></div>
+  	<script>(function(d, s, id) {
+  	  var js, fjs = d.getElementsByTagName(s)[0];
+  	  if (d.getElementById(id)) return;
+  	  js = d.createElement(s); js.id = id;
+      js.async=true;
+  	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+  	  fjs.parentNode.insertBefore(js, fjs);
+  	}(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your like button code -->
+    <div class="fb-like"
+      data-href="http://www.theultimateclean.com.au/"
+      data-layout="box_count"
+      data-action="like"
+      data-show-faces="true">
+    </div>
+
+
+     <div itemscope itemtype="http://schema.org/LocalBusiness" class="off-canvas-wrapper"><div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
       {{> off-canvi}}
 
@@ -33,11 +63,14 @@
      {{> body}}
              </div>
              <div class="medium-3 large-3 columns">
+
                {{> call-us}}
              </div>
            </div>
 
            <div class="row">
+
+
    {{> cleaning-services}}
            </div>
            <br>

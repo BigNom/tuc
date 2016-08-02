@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+---------------------------------------------
+Customize Template Colors
+---------------------------------------------
+*/
+
+#header { background:#} /*Background color of header*/
+#header a { color:#FFFFFF} /*Color of text in header*/
+#content { background:#} /*Background color of main content area*/
+#nav { background:#8DCCEC} /*Background color of main menu*/
+#nav ul li a { color:#1B428F} /*Color of text in main menu*/
+#nav ul li { border-top:1px solid #FFFFFF} /*Color of separator lines in main menu*/
+#footer { background:#222222} /*Background color of footer*/
+#footer p { color:#FFFFFF} /*Color of text in footer*/
+
+/*
+---------------------------------------------
+01. main/default elements
+---------------------------------------------
+*/
+
+html, body, p, div, input, textarea, select, option, fieldset, label, h1, h2, h3, h4, h5, h6, img, a, a:link, a:active, a:hover, a:visited, form, ul, ol, li { margin:0;  padding:0;  text-align:left;}
+
+img {
+	border: 1px solid #8F8F8F;
+}
+fieldset { border:none}
+
+ul, li {
+	list-style: none;
+	text-align: center;
+	float: left;
+}
+h3,h4,h5,h6 { font-weight:normal}
+h1 { font-weight:normal}
+h2{ font-weight:
+ color: #4D9823}
+ 
+ 
+h3{
+	text-align: center;
+	color: #3085C1;
+	font-size:80%;
+}
+ 
+ 
+body { font-size:100%; font-family:Arial, Helvetica, sans-serif}
+
+a:link, a:visited {color:#3D73B7; text-decoration: underline}
+a:hover {
+	color: #3D73B7;
+	text-decoration: none;
+	text-align: center;
+}
+
+p { font-size:1.0em; color:#2F393D; line-height:1.4em}
+
+h1 { font-size:1.0625em; color:#FFFFFF; font-weight:bold; text-align:center}
+h2 { font-size:1.125em; color:#2F393D; font-weight:bold; padding:10px 0 10px 0}
+
+/*
+---------------------------------------------
+02. header
+---------------------------------------------
+*/
+
+#header { width:90%; height:2.25em; float:left; padding:12px 5% 0 5%}
+#header a { font-size:1.0625em; font-weight:bold; text-align:center; text-decoration:none} 
+
+/*
+---------------------------------------------
+03. content
+---------------------------------------------
+*/
+
+#content { width:90%; float:left; padding:15px 5% 15px 5%}
+#content p {
+	padding: 5px 0 8px 0;
+	text-align: left;
+}
+#content .welcome p { text-align:center}
+#content .error p { color:#FF0000}
+#content .logo { width:100%; float:left; text-align:center; padding-bottom:8px; padding-top:8px}
+#content .logo img { border:none}
+img {
+	border: none;
+	text-align: center;
+}
+#call{
+
+	text-align: centre;
+}
+/*
+---------------------------------------------
+04. nav
+---------------------------------------------
+*/
+
+#nav { width:95%; align-content:center; float:left; padding:0 2.5% 0px 2.5%}
+
+#nav ul { width:100%; float:left}
+#nav ul li { width:95%; float:left; font-weight:bold; padding:0 2.5%}
+#nav ul li a { width:100%; float:left; text-decoration:none; padding:18px 0 18px 0}
+#nav ul li a span { float:left}
+#nav ul li a .arrow { float:right; padding:4px 5px 4px 7px; margin-top:-4px; font-size:1.0em;} 
+
+#nav ul li.one { border-top:none}
+#nav ul li.top { border-top:none}
+#nav ul li.top a { width:100%; float:left; text-decoration:none; padding:10px 0 10px 0}
+
+/*
+---------------------------------------------
+05. footer
+---------------------------------------------
+*/
+
+#footer { width:90%; height:3.75em; float:left; padding:20px 5% 0 5%}
+#footer p { font-family:Arial, Helvetica, sans-serif; font-size:0.75em; text-align:center}
+
+/*
+---------------------------------------------
+06. innerpage contents
+---------------------------------------------
+*/
+
+#content p span { font-weight:bold}
+
+#content .form { width:100%; float:left; padding-top:20px; padding-bottom:20px}
+#content .form ul li { width:100%; float:left; padding-bottom:20px}
+#content .form label { width:100%; float:left; font-size:1.0em; color:#2F393D; font-weight:bold; padding-bottom:8px}
+#content .form .input { width:93.8%; float:left; border:1px solid #666666; font-size:1.0em; color:#2F393D; padding:7px 3%}
+#content .form .textarea { width:93.8%; height:8.75em; float:left; border:1px solid #666666; font-family:Arial, Helvetica, sans-serif; font-size:1.0em; color:#2F393D; padding:10px 3%}
+#content .form .button { border: 2px solid #EEEEEE; background-color: #666666; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 1.125em; color:#FFFFFF; padding:8px 25px 8px 25px; cursor: pointer}
+
+#content .timings { width:105%; float:left; margin:0 -2.5%}
+#content .timings ul { width:100%; float:left}
+#content .timings ul li { width:95%; float:left; font-family:Arial, Helvetica, sans-serif; font-size:1.0625em; font-weight:normal; color:#2F393D; border-top:1px solid #BBBBBB; padding:12px 2.5%}
+#content .timings ul li.menu { font-size:1.0em; color:#2F393D; border-top:none; padding:4px 2.5%}
+#content .timings ul li span { width:65%; float:left}
+#content .timings ul li .right { width:35%; text-align:right; font-weight:bold}
+
+#content .offer { width:79.9%; float:left; background:#FCFFAD; border:1px solid #666666; text-align:center; padding:18px 10% 18px 10%}
+#content .offer h3 { font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#2F393D; font-weight:bold; text-align:center; padding-bottom:10px}
+#content .offer h4 {  font-size:1.0em; color:#2F393D; font-weight:bold; text-align:center; padding-bottom:8px}
+#content .offer p { text-align:center}
