@@ -26,29 +26,28 @@
 <!-- Booking Section -->
               <div class="reveal" id="modalBook" data-reveal data-abide-error>
                   <h2 class="text-center">Make a booking</h2>
-            <form data-abide novalidate>
-
+            <form id="contact-form" action="ajax-email.php" method="post" data-abide novalidate>
                 <div class="alert callout" style="display:none;" data-abide-error>
                     <p><i class="fi-alert"></i>There is an error in your form!</p>
                 </div>
 
                 <div class="row columns">
-                    <label>Name:
-                        <input type="text" placeholder="Your Name" required>
+                    <label>Name
+                        <input type="name" name="name" placeholder="Name" required/>
                         <span class="form-error">
                             <i class="fi-alert"></i> Your name is required</span>
                     </label>
                     </div>
                     <div class="row columns">
-                    <label>Email:
-                        <input type="text" placeholder="Your Email" required pattern="email">
+                    <label>Email
+                        <input type="email" name="email" placeholder="Email" required pattern="email"/>
                         <span class="form-error">
                             <i class="fi-alert"></i> Your email is required</span>
                     </label>
                     </div>
                     <div class="row columns">
-                    <label>Phone Number:
-                        <input type="text" placeholder="Your Phone Number" required pattern="number">
+                    <label>Phone Number
+                        <input type="text"  name="phone" placeholder="Your Phone Number" required pattern="number"/>
                         <span class="form-error">
                             <i class="fi-alert"></i> Your phone number is required</span>
                     </label>
@@ -64,8 +63,8 @@
                 </label>
               </div>
                     <div class="row columns">
-                    <label>Message:
-                        <textarea placeholder="Your Message"></textarea>
+                    <label>Message
+                        <textarea name="message" placeholder="Your Message"></textarea>
                     </label>
                     </div>
                     <div class="row columns">
@@ -74,20 +73,5 @@
                     <button class="close-button" data-close aria-label="Close reveal" type="button">
                         <span aria-hidden="true">&times;</span>
                     </button>
-
-            </form>
-            
-            <form method="post" action="acknowledge.php">
-<label for="name">Name:</label>
-<input type="text" name="name" id="name">
-
-<label for="email">Email:</label>
-<input type="email" name="email" id="email">
-
-<label for="comments">Comments:</label>
-<textarea name="comments" id="comments"></textarea>
-
-<input type="submit" name="send" value="Send Message">
-
             </form>
 </div>
