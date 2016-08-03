@@ -4,7 +4,8 @@
   "description": "The ultimate clean",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp",
+    "dev": "gulp",
+    "start": "node server.js",
     "test": "npm run test:sass && npm run test:javascript",
     "build": "gulp build --production"
   },
