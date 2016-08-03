@@ -4,9 +4,9 @@ if (isset($_POST['send'])) {
   $subject = 'Feedback from my site';
   $message = 'Name: ' . $_POST['name'] . "\r\n\r\n";
   $message .= 'Email: '  . $_POST['email'] . "\r\n\r\n";
-  $message .= 'COmments: '  . $_POST['comments'];
-  echo $message;
-}
+  $message .= 'Comments: '  . $_POST['comments'];
+
+}$success = mail($to, $subject, $message, $header);
  ?>
 
 <!DOCTYPE html>
@@ -16,14 +16,14 @@ if (isset($_POST['send'])) {
     <title>acknowledge</title>
   </head>
   <body>
-    <h1>Thank You</h1>
-    <p>
-      Your message has been sent.
-    </p>
-    <h1>Oops!</h1>
-    <p>
-      Sorry, there was a problem sending your message.
-    </p>
+    <?php if (isset($success) && $success) { ?>
+      <h1>Thank You</h1>
+        Your message has been sent.
+        <?php } else { ?>
+      <h1>Oops!</h1>
+        Sorry, there was a problem sending your message.
+    <?php } ?>
+
 
   </body>
 </html>
