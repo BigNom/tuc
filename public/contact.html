@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="assets/css/foundation-icons.css">
   </head>
   <body>
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TSSMKX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TSSMKX');</script>
+<!-- End Google Tag Manager -->
 
       <div class="off-canvas-wrapper"><div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
@@ -112,7 +121,7 @@
               </div>
               <svg width="100" height="100">
                 <circle cx="500" cy="500" r="100" stroke="green" stroke-width="4" fill="yellow" />
-                
+              
               </svg>
               </div>
               
@@ -140,7 +149,21 @@
             <!-- Booking Section -->
     
             <h3 class="text-center">Contact us today</h3>
-            <form data-abide novalidate>
+            <form id="contactForm" action="assets/php/send.php" method="post">
+    
+                <label for="name">Your name</label>
+                <input type="text" name="name">
+    
+                <label for="email">Your email</label>
+                <input type="email" name="email">
+    
+                <label for="message">Add your message</label>
+                <textarea name="messageField"></textarea>
+    
+                <div id="correct">E-mail Sent</div>
+                  <input class="button expanded button-submit" type="submit" name="submit" value="Submit"/>
+            </form>
+    <!--        <form data-abide novalidate>
     
                 <div class="alert callout" style="display:none;" data-abide-error>
                     <p><i class="fi-alert"></i>There is an error in your form!</p>
@@ -189,7 +212,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
     
-            </form>
+            </form>-->
             <br>
         </div>
     </div>
@@ -243,6 +266,11 @@
                         </div>
                         <span class="form-error">
                             <i class="fi-alert"></i> Your email is required</span>
+                            <div id="google_translate_element"></div><script type="text/javascript">
+                          function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'de,el,en,fr,id,it,ja,vi,zh-CN,zh-TW', multilanguagePage: true, gaTrack: true, gaId: 'UA-32076866-1'}, 'google_translate_element');
+                          }
+                          </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
           
                     </label>
           

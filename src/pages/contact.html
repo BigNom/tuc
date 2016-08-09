@@ -19,7 +19,21 @@ layout: contact
         <!-- Booking Section -->
 
         <h3 class="text-center">Contact us today</h3>
-        <form data-abide novalidate>
+        <form id="contactForm" action="assets/php/send.php" method="post">
+
+            <label for="name">Your name</label>
+            <input type="text" name="name">
+
+            <label for="email">Your email</label>
+            <input type="email" name="email">
+
+            <label for="message">Add your message</label>
+            <textarea name="messageField"></textarea>
+
+            <div id="correct">E-mail Sent</div>
+              <input class="button expanded button-submit" type="submit" name="submit" value="Submit"/>
+        </form>
+<!--        <form data-abide novalidate>
 
             <div class="alert callout" style="display:none;" data-abide-error>
                 <p><i class="fi-alert"></i>There is an error in your form!</p>
@@ -68,7 +82,7 @@ layout: contact
                 <span aria-hidden="true">&times;</span>
             </button>
 
-        </form>
+        </form>-->
         <br>
     </div>
 </div>

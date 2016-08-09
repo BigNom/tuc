@@ -20,6 +20,15 @@ Perth Carpet Cleaner, Perth Carpet Cleaners, Perth Carpet Cleaning" />
     <meta property="og:image"         content="http://www.theultimateclean.com.au/assets/img/carpet-cleaning.jpg" />
   </head>
   <body>
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TSSMKX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TSSMKX');</script>
+<!-- End Google Tag Manager -->
 
     <!-- Load Facebook SDK for JavaScript -->
   	<div id="fb-root"></div>
@@ -142,12 +151,15 @@ Perth Carpet Cleaner, Perth Carpet Cleaners, Perth Carpet Cleaning" />
             </div>
             <svg width="100" height="100">
               <circle cx="500" cy="500" r="100" stroke="green" stroke-width="4" fill="yellow" />
-              
+            
             </svg>
             </div>
             
-          </div>
 
+
+          </div>
+          <br>
+          <hr>
 
           <div class="expanded row">
              <div class="medium-8 large-offset-1 columns">
@@ -159,8 +171,6 @@ Perth Carpet Cleaner, Perth Carpet Cleaners, Perth Carpet Cleaning" />
      
      <p>Customers always ask me <strong>"what makes your company different from the other ones?"</strong> My answer is usually about taking the time. It takes time to do things correctly, the process to clean has a formula it is called the CHAT PIE the pie is broken into quarters
          Chemical, Heat, Agitation and Time. If This process is followed using the correct chemicals, equipment and knowledge the results can be exceptional.</p>
-         <!--<img src="assets/img/the-cleaning-chart.jpg" alt="Cleaning Chart">-->
-       
      
              </div>
              <div class="medium-3 large-3 columns">
@@ -172,13 +182,13 @@ Perth Carpet Cleaner, Perth Carpet Cleaners, Perth Carpet Cleaning" />
                        <div class="small-12 columns">
                          <h3 class="call-us">Call us today</h3>
                
-                           <a class="large expanded button" href="#">9330 4920</a>
+                           <a class="large expanded button button-phone" href="#">9330 4920</a>
                          </div>
                        <br>
                        <br>
                        <div class="small-12 columns">
                          <h3 class="call-us">Book online</h3>
-                         <a data-open="modalBook" class="large expanded button pulse">Book now</a>
+                         <a data-open="modalBook" class="large expanded button button-email">Book now</a>
                        </div>
                      </div>
                    </form>
@@ -193,93 +203,59 @@ Perth Carpet Cleaner, Perth Carpet Cleaners, Perth Carpet Cleaning" />
                <!-- Booking Section -->
                              <div class="reveal" id="modalBook" data-reveal data-abide-error>
                                  <h2 class="text-center">Make a booking</h2>
-                           <form id="contact-form" action="ajax-email.php" method="post" data-abide novalidate>
-                               <div class="alert callout" style="display:none;" data-abide-error>
-                                   <p><i class="fi-alert"></i>There is an error in your form!</p>
-                               </div>
+                                 <form id="contactForm" action="assets/php/send.php" method="post">
                
-                               <div class="row columns">
-                                   <label>Name
-                                       <input type="name" name="name" placeholder="Name" required/>
-                                       <span class="form-error">
-                                           <i class="fi-alert"></i> Your name is required</span>
-                                   </label>
-                                   </div>
-                                   <div class="row columns">
-                                   <label>Email
-                                       <input type="email" name="email" placeholder="Email" required pattern="email"/>
-                                       <span class="form-error">
-                                           <i class="fi-alert"></i> Your email is required</span>
-                                   </label>
-                                   </div>
-                                   <div class="row columns">
-                                   <label>Phone Number
-                                       <input type="text"  name="phone" placeholder="Your Phone Number" required pattern="number"/>
-                                       <span class="form-error">
-                                           <i class="fi-alert"></i> Your phone number is required</span>
-                                   </label>
-                                   </div>
-                                   <div class="row columns">
-                                   <label>Cleaning Service
-                               <select>
-                                 <option value="carpet-cleaning">Carpet Cleaning</option>
-                                 <option value="tile-cleaning">Tile Cleaning</option>
-                                 <option value="upholstery-cleaning">Upholstery Cleaning</option>
-                                 <option value="apollo">Other</option>
-                               </select>
-                               </label>
-                             </div>
-                                   <div class="row columns">
-                                   <label>Message
-                                       <textarea name="message" placeholder="Your Message"></textarea>
-                                   </label>
-                                   </div>
-                                   <div class="row columns">
-                                       <input type="submit" class="button expanded" value="Submit">
-                                   </div>
-                                   <button class="close-button" data-close aria-label="Close reveal" type="button">
-                                       <span aria-hidden="true">&times;</span>
-                                   </button>
-                           </form>
+                                     <label for="name">Your name</label>
+                                     <input type="text" name="name">
+               
+                                     <label for="email">Your email</label>
+                                     <input type="email" name="email">
+               
+                                     <label for="message">Add your message</label>
+                                     <textarea name="messageField"></textarea>
+               
+                                     <div id="correct">E-mail Sent</div>
+                                       <input class="button expanded button-submit" type="submit" name="submit" value="Submit"/>
+                                 </form>
                </div>
                
              </div>
            </div>
+           <hr>
 
-           <div class="row">
+      <div class="expanded row" data-equalizer data-equalize-on="medium" id="test-eq">
+<div class="medium-10 medium-centered columns">
 
-
-   
    <br>
-   <div class="expanded row" data-equalizer data-equalize-on="medium" id="test-eq">
-     <h3 class="text-center">Choose from <strong>The Ultimate Cleaning</strong> Services</h3>
+     <h2 class="text-center">Choose from <strong>The Ultimate Cleaning</strong> Services</h2>
+     <br>
        <div class="large-4 columns">
-           <div class="callout" data-equalizer-watch>
+           <div class="callout callout-services" data-equalizer-watch>
                <a href="carpet-cleaning-perth.html">
-                 <img class="services-image" src="assets/img/carpet-cleaning.jpg" alt="Carpet Cleaning">
-                   <p class="lead">Carpet Cleaning</p>
-                   <p class="subheader">Do you want the <strong>Ultimate</strong> carpet cleaning in Perth? At the Ultimate Clean we <strong>Guarantee</strong> you will be impressed. We use the best Carpet Cleaning system.
+                 <img class="services-image" src="assets/img/carpet-cleaning-large.jpg" alt="Carpet Cleaning">
+                   <p class="lead lead-services">Carpet Cleaning</p>
+                   <p class="subheader subheader-services">Do you want the <strong>Ultimate</strong> carpet cleaning in Perth? At the Ultimate Clean we <strong>Guarantee</strong> you will be impressed. We use the best Carpet Cleaning system.
                    </p>
    
                </a>
            </div>
        </div>
        <div class="large-4 columns">
-           <div class="callout" data-equalizer-watch>
+           <div class="callout callout-services" data-equalizer-watch>
                <a href="tile-and-grout-cleaning-perth.html">
-                   <img class="services-image" src="assets/img/tile-cleaning.jpg" alt="Tile Cleaning" href="carpet-cleaning-perth.html">
-                   <p class="lead">Tile Cleaning</p>
-                   <p class="subheader">Do you want the <strong>Ultimate</strong> tile cleaning in Perth? At the Ultimate Clean we <strong>Guarantee</strong> you will be impressed. We use the best Tile Cleaning system.
+                   <img class="services-image" src="assets/img/tile-cleaning-large.jpg" alt="Tile Cleaning" href="carpet-cleaning-perth.html">
+                   <p class="lead lead-services">Tile Cleaning</p>
+                   <p class="subheader subheader-services">Do you want the <strong>Ultimate</strong> tile cleaning in Perth? At the Ultimate Clean we <strong>Guarantee</strong> you will be impressed. We use the best Tile Cleaning system.
                    </p>
                </a>
            </div>
        </div>
        <div class="large-4 columns">
-           <div class="callout" data-equalizer-watch>
+           <div class="callout callout-services" data-equalizer-watch>
                <a href="upholstery-cleaning-perth.html">
-                   <img class="services-image" src="assets/img/upholstery-cleaning.jpg" alt="Upholstery Cleaning">
-                   <p class="lead">Upholstery Cleaning</p>
-                   <p class="subheader">Do you want the <strong>Ultimate</strong> upholstery cleaning in Perth? At the Ultimate Clean we <strong>Guarantee</strong> you will be impressed. We use the best Upholstery Cleaning system.
+                   <img class="services-image" src="assets/img/upholstery-cleaning-large.jpg" alt="Upholstery Cleaning">
+                   <p class="lead lead-services">Upholstery Cleaning</p>
+                   <p class="subheader subheader-services">Do you want the <strong>Ultimate</strong> upholstery cleaning in Perth? At the Ultimate Clean we <strong>Guarantee</strong> you will be impressed. We use the best Upholstery Cleaning system.
                    </p>
                </a>
            </div>
@@ -287,6 +263,7 @@ Perth Carpet Cleaner, Perth Carpet Cleaners, Perth Carpet Cleaning" />
    </div>
    
            </div>
+         </div>
            <br>
            <br>
 
@@ -336,6 +313,11 @@ Perth Carpet Cleaner, Perth Carpet Cleaners, Perth Carpet Cleaning" />
                          </div>
                          <span class="form-error">
                              <i class="fi-alert"></i> Your email is required</span>
+                             <div id="google_translate_element"></div><script type="text/javascript">
+                           function googleTranslateElementInit() {
+                             new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'de,el,en,fr,id,it,ja,vi,zh-CN,zh-TW', multilanguagePage: true, gaTrack: true, gaId: 'UA-32076866-1'}, 'google_translate_element');
+                           }
+                           </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
            
                      </label>
            

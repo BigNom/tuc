@@ -13,6 +13,15 @@ Carpet Cleaning Perth, Perth Carpet Cleaner, Perth Carpet Cleaners, Perth Carpet
     <link rel="stylesheet" href="assets/css/foundation-icons.css">
   </head>
   <body>
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TSSMKX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TSSMKX');</script>
+<!-- End Google Tag Manager -->
 
     <div class="off-canvas-wrapper"><div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
       <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas data-position="left">
@@ -109,7 +118,7 @@ Carpet Cleaning Perth, Perth Carpet Cleaner, Perth Carpet Cleaners, Perth Carpet
             </div>
             <svg width="100" height="100">
               <circle cx="500" cy="500" r="100" stroke="green" stroke-width="4" fill="yellow" />
-              
+            
             </svg>
             </div>
             
@@ -234,13 +243,13 @@ Carpet Cleaning Perth, Perth Carpet Cleaner, Perth Carpet Cleaners, Perth Carpet
                        <div class="small-12 columns">
                          <h3 class="call-us">Call us today</h3>
                
-                           <a class="large expanded button" href="#">9330 4920</a>
+                           <a class="large expanded button button-phone" href="#">9330 4920</a>
                          </div>
                        <br>
                        <br>
                        <div class="small-12 columns">
                          <h3 class="call-us">Book online</h3>
-                         <a data-open="modalBook" class="large expanded button pulse">Book now</a>
+                         <a data-open="modalBook" class="large expanded button button-email">Book now</a>
                        </div>
                      </div>
                    </form>
@@ -255,60 +264,26 @@ Carpet Cleaning Perth, Perth Carpet Cleaner, Perth Carpet Cleaners, Perth Carpet
                <!-- Booking Section -->
                              <div class="reveal" id="modalBook" data-reveal data-abide-error>
                                  <h2 class="text-center">Make a booking</h2>
-                           <form id="contact-form" action="ajax-email.php" method="post" data-abide novalidate>
-                               <div class="alert callout" style="display:none;" data-abide-error>
-                                   <p><i class="fi-alert"></i>There is an error in your form!</p>
-                               </div>
+                                 <form id="contactForm" action="assets/php/send.php" method="post">
                
-                               <div class="row columns">
-                                   <label>Name
-                                       <input type="name" name="name" placeholder="Name" required/>
-                                       <span class="form-error">
-                                           <i class="fi-alert"></i> Your name is required</span>
-                                   </label>
-                                   </div>
-                                   <div class="row columns">
-                                   <label>Email
-                                       <input type="email" name="email" placeholder="Email" required pattern="email"/>
-                                       <span class="form-error">
-                                           <i class="fi-alert"></i> Your email is required</span>
-                                   </label>
-                                   </div>
-                                   <div class="row columns">
-                                   <label>Phone Number
-                                       <input type="text"  name="phone" placeholder="Your Phone Number" required pattern="number"/>
-                                       <span class="form-error">
-                                           <i class="fi-alert"></i> Your phone number is required</span>
-                                   </label>
-                                   </div>
-                                   <div class="row columns">
-                                   <label>Cleaning Service
-                               <select>
-                                 <option value="carpet-cleaning">Carpet Cleaning</option>
-                                 <option value="tile-cleaning">Tile Cleaning</option>
-                                 <option value="upholstery-cleaning">Upholstery Cleaning</option>
-                                 <option value="apollo">Other</option>
-                               </select>
-                               </label>
-                             </div>
-                                   <div class="row columns">
-                                   <label>Message
-                                       <textarea name="message" placeholder="Your Message"></textarea>
-                                   </label>
-                                   </div>
-                                   <div class="row columns">
-                                       <input type="submit" class="button expanded" value="Submit">
-                                   </div>
-                                   <button class="close-button" data-close aria-label="Close reveal" type="button">
-                                       <span aria-hidden="true">&times;</span>
-                                   </button>
-                           </form>
+                                     <label for="name">Your name</label>
+                                     <input type="text" name="name">
+               
+                                     <label for="email">Your email</label>
+                                     <input type="email" name="email">
+               
+                                     <label for="message">Add your message</label>
+                                     <textarea name="messageField"></textarea>
+               
+                                     <div id="correct">E-mail Sent</div>
+                                       <input class="button expanded button-submit" type="submit" name="submit" value="Submit"/>
+                                 </form>
                </div>
                
                <br>
                <br>
                    <div class="callout secondary">
-                           <h5>Carpet Stain Removal</h5>
+                           <h4>Carpet Stain Removal</h4>
                  <p>
                    The Ultimate Clean utilises the best Carpet Stain Removal systems for:
                  </p>
@@ -409,6 +384,11 @@ Carpet Cleaning Perth, Perth Carpet Cleaner, Perth Carpet Cleaners, Perth Carpet
                          </div>
                          <span class="form-error">
                              <i class="fi-alert"></i> Your email is required</span>
+                             <div id="google_translate_element"></div><script type="text/javascript">
+                           function googleTranslateElementInit() {
+                             new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'de,el,en,fr,id,it,ja,vi,zh-CN,zh-TW', multilanguagePage: true, gaTrack: true, gaId: 'UA-32076866-1'}, 'google_translate_element');
+                           }
+                           </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
            
                      </label>
            
